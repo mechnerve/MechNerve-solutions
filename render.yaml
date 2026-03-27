@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: mechnerve-website
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SENDER_EMAIL
+        value: mechnervesolutions@gmail.com
+      - key: RECEIVER_EMAIL
+        value: mechnervesolutions@gmail.com
+      - key: EMAIL_PASSWORD
+        sync: false
+    autoDeploy: true
+    healthCheckPath: /health
+    staticPublishPath: /static

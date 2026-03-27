@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    /* Ensure body is hidden until loading screen is done */
+    body:not(.loaded) {
+        overflow: hidden;
+    }
+    
+    body.loaded {
+        overflow: visible;
+    }
+</style>
+    <meta charset="UTF-8">
+    <title>MechNerve Solutions | AI-Powered Mechanical Engineering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MechNerve Solutions: Leading provider of AI-powered mechanical engineering, automation, and smart manufacturing solutions. Engineering smarter machines for tomorrow.">
+    <meta name="keywords" content="mechanical engineering, AI solutions, automation, robotics, smart manufacturing, industrial IoT">
+    <meta name="author" content="MechNerve Solutions">
+    <meta property="og:title" content="MechNerve Solutions">
+    <meta property="og:description" content="Engineering smarter machines with AI-powered solutions">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/png">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Logo" class="loading-logo">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo-area">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Logo">
+                <span>MechNerve</span>
+            </div>
+            
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/contact" class="btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Get Started</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="glow-effect" style="top: 20%; left: 10%;"></div>
+        <div class="glow-effect" style="bottom: 20%; right: 10%; background: radial-gradient(circle, #f472b6 0%, transparent 70%);"></div>
+        
+        <img class="hero-bg-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Background Logo">
+        
+        <div class="hero-content">
+            <h1 class="fade-in">Engineering the Future with Intelligence</h1>
+            <p class="fade-in">Where mechanical precision meets artificial intelligence to create smarter, more efficient industrial solutions.</p>
+            <div class="fade-in" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#services" class="btn">Explore Solutions</a>
+                <a href="/contact" class="btn" style="background: transparent; border: 2px solid var(--primary);">Schedule a Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <img class="page-bg-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Background Logo">
+        
+        <div class="page-content-wrapper">
+            <h2 class="fade-in">Our Advanced Solutions</h2>
+            <p class="fade-in" style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.2rem;">
+                Integrating cutting-edge technology with mechanical expertise to deliver transformative solutions
+            </p>
+            
+            <ul>
+                <li class="fade-in hover-lift">
+                    <strong>Intelligent Mechanical Design</strong><p class="service-desc">
+                    AI-driven design optimization and simulation for maximum efficiency
+</p>
+                </li>
+                <li class="fade-in hover-lift" style="transition-delay: 0.1s;">
+                    <strong>Smart Automation & Robotics</strong><p class="service-desc">
+                    Advanced robotic systems powered by machine learning
+</p>
+                </li>
+                <li class="fade-in hover-lift" style="transition-delay: 0.2s;">
+                    <strong>AI-Powered Analytics</strong><p class="service-desc">
+                    Real-time data analysis and predictive maintenance
+</p>
+                </li>
+                <li class="fade-in hover-lift" style="transition-delay: 0.3s;">
+                    <strong>Industrial IoT Systems</strong><p class="service-desc">
+                    Connected devices for seamless industrial operations
+</p>
+                </li>
+                <li class="fade-in hover-lift" style="transition-delay: 0.4s;">
+                    <strong>Smart Manufacturing</strong><p class="service-desc">
+                    Digital twins and smart factory implementations
+</p>
+                </li>
+                <li class="fade-in hover-lift" style="transition-delay: 0.5s;">
+                    <strong>Predictive Maintenance</strong><p class="service-desc">
+                    Proactive system monitoring and failure prevention
+</p>
+                </li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 4rem;" class="fade-in">
+                <a href="/contact" class="btn" style="padding: 1rem 3rem; font-size: 1.1rem;">
+                    Start Your Project →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="services" style="background: var(--darker-bg);">
+        <div class="page-content-wrapper">
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <h3>50+</h3>
+                    <p>Successful Projects Delivered</p>
+                </div>
+                <div class="feature-card fade-in" style="transition-delay: 0.1s;">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+                <div class="feature-card fade-in" style="transition-delay: 0.2s;">
+                    <h3>24/7</h3>
+                    <p>Technical Support Available</p>
+                </div>
+                <div class="feature-card fade-in" style="transition-delay: 0.3s;">
+                    <h3>15+</h3>
+                    <p>Industry Experts on Team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="height: 30px;">
+                        <span style="font-size: 1.3rem; font-weight: bold;" class="text-gradient">MechNerve</span>
+                    </div>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">
+                        Pioneering intelligent mechanical solutions through AI integration and innovation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="/" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Home</a>
+                        <a href="/about" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">About Us</a>
+                        <a href="#services" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Services</a>
+                        <a href="/contact" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Contact Info</h4>
+                    <div style="color: var(--text-gray); font-size: 0.9rem;">
+                        <p>Hyderabad, India</p>
+                        <p>mechnervesolutions@gmail.com</p>
+                        <p>+91 7995961231</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(56, 189, 248, 0.1); padding-top: 1.5rem;">
+                <p style="color: var(--text-gray); font-size: 0.85rem;">
+                    © 2026 MechNerve Solutions. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+// Emergency fix for scrolling
+window.addEventListener('load', function() {
+    console.log('✅ Page loaded - enabling scrolling');
+    
+    // Force enable scrolling
+    document.body.style.overflow = 'auto';
+    document.body.style.position = 'static';
+    document.documentElement.style.overflow = 'auto';
+    document.documentElement.style.position = 'static';
+    
+    // Remove loading screen
+    const loadingScreen = document.querySelector('.loading-screen');
+    if (loadingScreen) {
+        loadingScreen.style.opacity = '0';
+        loadingScreen.style.visibility = 'hidden';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+            console.log('✅ Loading screen hidden');
+        }, 300);
+    }
+    
+    // Add loaded class to body
+    document.body.classList.add('loaded');
+    
+    // Force trigger any stuck animations
+    document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.add('visible');
+    });
+});
+
+// Also run on DOMContentLoaded as backup
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.overflow = 'auto';
+    document.body.style.position = 'static';
+});
+</script>
+
+<style>
+/* Emergency inline styles to fix scrolling */
+body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    position: relative !important;
+    height: auto !important;
+    min-height: 100vh !important;
+}
+
+.loading-screen {
+    transition: opacity 0.3s ease !important;
+}
+
+.loaded .loading-screen {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+</style>
+</body>
+</html>
