@@ -1,31 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-    /* Ensure body is hidden until loading screen is done */
-    body:not(.loaded) {
-        overflow: hidden;
-    }
-    
-    body.loaded {
-        overflow: visible;
-    }
-</style>
     <meta charset="UTF-8">
-    <title>MechNerve Solutions | AI-Powered Mechanical Engineering</title>
+    <title>MechNerve Solutions | Engineering the Future with Intelligence</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MechNerve Solutions: Leading provider of AI-powered mechanical engineering, automation, and smart manufacturing solutions. Engineering smarter machines for tomorrow.">
-    <meta name="keywords" content="mechanical engineering, AI solutions, automation, robotics, smart manufacturing, industrial IoT">
-    <meta name="author" content="MechNerve Solutions">
-    <meta property="og:title" content="MechNerve Solutions">
-    <meta property="og:description" content="Engineering smarter machines with AI-powered solutions">
-    <meta property="og:type" content="website">
+    <meta name="description" content="MechNerve Solutions - Pioneering AI-powered mechanical engineering, embedded systems, and EV technology solutions.">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/png">
     <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
 </head>
 <body>
-    <!-- Loading Screen -->
     <div class="loading-screen">
         <div class="loading-content">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Logo" class="loading-logo">
@@ -35,10 +19,8 @@
         </div>
     </div>
 
-    <!-- Scroll Progress -->
     <div class="scroll-progress"></div>
 
-    <!-- Header -->
     <header>
         <div class="navbar">
             <div class="logo-area">
@@ -46,7 +28,7 @@
                 <span>MechNerve</span>
             </div>
             
-           <nav>
+            <nav>
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/portfolio">Services & Projects</a>
@@ -58,103 +40,90 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="glow-effect" style="top: 20%; left: 10%;"></div>
-        <div class="glow-effect" style="bottom: 20%; right: 10%; background: radial-gradient(circle, #f472b6 0%, transparent 70%);"></div>
+    <section class="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; margin-top: 0;">
+        <img class="hero-bg-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Background Logo">
         
-        <img class="hero-bg-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Background Logo">
-        
-        <div class="hero-content">
-            <h1 class="fade-in">Engineering the Future with Intelligence</h1>
-            <p class="fade-in">Where mechanical precision meets artificial intelligence to create smarter, more efficient industrial solutions.</p>
-            <div class="fade-in" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="#services" class="btn">Explore Solutions</a>
-                <a href="/contact" class="btn" style="background: transparent; border: 2px solid var(--primary);">Schedule a Demo</a>
+        <div class="hero-content fade-in" style="z-index: 2; max-width: 900px; padding: 0 5%;">
+            <h1 style="font-size: 4rem; line-height: 1.2; margin-bottom: 1.5rem;">
+                Engineering the Future <br>
+                <span class="text-gradient" style="font-size: 4.5rem;">with Intelligence</span>
+            </h1>
+            <p style="font-size: 1.4rem; color: var(--text-gray); margin-bottom: 3rem;">
+                Where mechanical precision meets artificial intelligence to create smarter, more efficient industrial solutions.
+            </p>
+            
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/portfolio" class="btn" style="padding: 1.2rem 2.5rem; font-size: 1.1rem;">Explore Solutions</a>
+                <a href="/contact" class="btn" style="padding: 1.2rem 2.5rem; font-size: 1.1rem; background: transparent; border: 2px solid rgba(56, 189, 248, 0.5); box-shadow: none;">Schedule a Demo</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <img class="page-bg-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Background Logo">
-        
+    <section class="page" style="margin-top: 0; padding-top: 2rem; min-height: auto;">
         <div class="page-content-wrapper">
-            <h2 class="fade-in">Our Advanced Solutions</h2>
-            <p class="fade-in" style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.2rem;">
-                Integrating cutting-edge technology with mechanical expertise to deliver transformative solutions
-            </p>
+            <div class="fade-in" style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;" class="text-gradient">Core Capabilities</h2>
+                <p style="color: var(--text-gray); font-size: 1.1rem; max-width: 600px; margin: 1rem auto 0;">
+                    Integrating cutting-edge software with robust mechanical hardware.
+                </p>
+            </div>
+
+            <div class="features-grid fade-in">
+                <div class="feature-card hover-lift" style="text-align: center; padding: 3rem 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔌</div>
+                    <h3 style="color: white; margin-bottom: 1rem;">Embedded Systems</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem;">
+                        Advanced microcontrollers, CAN bus communication networks, and secure IoT integration for real-time control.
+                    </p>
+                </div>
+                
+                <div class="feature-card hover-lift" style="text-align: center; padding: 3rem 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                    <h3 style="color: white; margin-bottom: 1rem;">EV Technology</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem;">
+                        Optimized power allocation, Fuel Cell dynamics, and regenerative braking simulations for modern electric vehicles.
+                    </p>
+                </div>
+                
+                <div class="feature-card hover-lift" style="text-align: center; padding: 3rem 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
+                    <h3 style="color: white; margin-bottom: 1rem;">AI Integration</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem;">
+                        Machine learning algorithms and computer vision designed to automate and optimize industrial mechanical processes.
+                    </p>
+                </div>
+                
+                <div class="feature-card hover-lift" style="text-align: center; padding: 3rem 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚙️</div>
+                    <h3 style="color: white; margin-bottom: 1rem;">System Simulation</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem;">
+                        Rigorous pre-prototyping validation using MATLAB Simulink and automated testing sequences via LabVIEW.
+                    </p>
+                </div>
+            </div>
             
-            <ul>
-                <li class="fade-in hover-lift">
-                    <strong>Intelligent Mechanical Design</strong><p class="service-desc">
-                    AI-driven design optimization and simulation for maximum efficiency
-</p>
-                </li>
-                <li class="fade-in hover-lift" style="transition-delay: 0.1s;">
-                    <strong>Smart Automation & Robotics</strong><p class="service-desc">
-                    Advanced robotic systems powered by machine learning
-</p>
-                </li>
-                <li class="fade-in hover-lift" style="transition-delay: 0.2s;">
-                    <strong>AI-Powered Analytics</strong><p class="service-desc">
-                    Real-time data analysis and predictive maintenance
-</p>
-                </li>
-                <li class="fade-in hover-lift" style="transition-delay: 0.3s;">
-                    <strong>Industrial IoT Systems</strong><p class="service-desc">
-                    Connected devices for seamless industrial operations
-</p>
-                </li>
-                <li class="fade-in hover-lift" style="transition-delay: 0.4s;">
-                    <strong>Smart Manufacturing</strong><p class="service-desc">
-                    Digital twins and smart factory implementations
-</p>
-                </li>
-                <li class="fade-in hover-lift" style="transition-delay: 0.5s;">
-                    <strong>Predictive Maintenance</strong><p class="service-desc">
-                    Proactive system monitoring and failure prevention
-</p>
-                </li>
-            </ul>
-            
-            <div style="text-align: center; margin-top: 4rem;" class="fade-in">
-                <a href="/contact" class="btn" style="padding: 1rem 3rem; font-size: 1.1rem;">
-                    Start Your Project →
+            <div class="fade-in" style="text-align: center; margin-top: 3rem;">
+                <a href="/portfolio#services" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 8px;">
+                    View All Services <span style="font-size: 1.2rem;">→</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="services" style="background: var(--darker-bg);">
-        <div class="page-content-wrapper">
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <h3>50+</h3>
-                    <p>Successful Projects Delivered</p>
-                </div>
-                <div class="feature-card fade-in" style="transition-delay: 0.1s;">
-                    <h3>98%</h3>
-                    <p>Client Satisfaction Rate</p>
-                </div>
-                <div class="feature-card fade-in" style="transition-delay: 0.2s;">
-                    <h3>24/7</h3>
-                    <p>Technical Support Available</p>
-                </div>
-                <div class="feature-card fade-in" style="transition-delay: 0.3s;">
-                    <h3>15+</h3>
-                    <p>Industry Experts on Team</p>
-                </div>
-            </div>
+    <section class="fade-in" style="margin: 6rem 5%; padding: 4rem 2rem; background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(244, 114, 182, 0.1)); border-radius: 20px; text-align: center; border: 1px solid rgba(56, 189, 248, 0.2); position: relative; overflow: hidden;">
+        <div class="glow-effect" style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 300px;"></div>
+        <div style="position: relative; z-index: 2;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to build the next generation of industrial technology?</h2>
+            <p style="color: var(--text-light); font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Let our team of AI and mechanical engineering experts turn your complex challenges into elegant, automated solutions.
+            </p>
+            <a href="/contact#contact-form" class="btn" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Start Your Project Today</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div style="max-width: 1200px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; text-align: left;">
                 <div>
                     <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
                         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="height: 30px;">
@@ -170,7 +139,7 @@
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                         <a href="/" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Home</a>
                         <a href="/about" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">About Us</a>
-                        <a href="#services" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Services</a>
+                        <a href="/portfolio" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Services & Projects</a>
                         <a href="/contact" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Contact</a>
                     </div>
                 </div>
@@ -185,70 +154,12 @@
                 </div>
             </div>
             
-            <div style="border-top: 1px solid rgba(56, 189, 248, 0.1); padding-top: 1.5rem;">
+            <div style="border-top: 1px solid rgba(56, 189, 248, 0.1); padding-top: 1.5rem; text-align: center;">
                 <p style="color: var(--text-gray); font-size: 0.85rem;">
                     © 2026 MechNerve Solutions. All rights reserved.
                 </p>
             </div>
         </div>
     </footer>
-    <script>
-// Emergency fix for scrolling
-window.addEventListener('load', function() {
-    console.log('✅ Page loaded - enabling scrolling');
-    
-    // Force enable scrolling
-    document.body.style.overflow = 'auto';
-    document.body.style.position = 'static';
-    document.documentElement.style.overflow = 'auto';
-    document.documentElement.style.position = 'static';
-    
-    // Remove loading screen
-    const loadingScreen = document.querySelector('.loading-screen');
-    if (loadingScreen) {
-        loadingScreen.style.opacity = '0';
-        loadingScreen.style.visibility = 'hidden';
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-            console.log('✅ Loading screen hidden');
-        }, 300);
-    }
-    
-    // Add loaded class to body
-    document.body.classList.add('loaded');
-    
-    // Force trigger any stuck animations
-    document.querySelectorAll('.fade-in').forEach(el => {
-        el.classList.add('visible');
-    });
-});
-
-// Also run on DOMContentLoaded as backup
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.style.overflow = 'auto';
-    document.body.style.position = 'static';
-});
-</script>
-
-<style>
-/* Emergency inline styles to fix scrolling */
-body {
-    overflow-y: scroll !important;
-    overflow-x: hidden !important;
-    position: relative !important;
-    height: auto !important;
-    min-height: 100vh !important;
-}
-
-.loading-screen {
-    transition: opacity 0.3s ease !important;
-}
-
-.loaded .loading-screen {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-</style>
 </body>
 </html>
