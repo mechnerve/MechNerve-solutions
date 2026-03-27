@@ -10,7 +10,6 @@
     <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
 </head>
 <body>
-    <!-- Loading Screen -->
     <div class="loading-screen">
         <div class="loading-content">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Logo" class="loading-logo">
@@ -20,10 +19,8 @@
         </div>
     </div>
 
-    <!-- Scroll Progress -->
     <div class="scroll-progress"></div>
 
-    <!-- Header -->
     <header>
         <div class="navbar">
             <div class="logo-area">
@@ -31,7 +28,7 @@
                 <span>MechNerve</span>
             </div>
             
-           <nav>
+            <nav>
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/portfolio">Services & Projects</a>
@@ -43,7 +40,6 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section class="page">
         <img class="page-bg-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Background Logo">
         
@@ -52,53 +48,45 @@
             
             <div class="fade-in" style="margin-bottom: 3rem;">
                 <p style="font-size: 1.2rem; color: var(--primary); font-weight: 500;">
-                    The Minds Behind Intelligent Mechanical Innovation
+                    The Architects Behind Intelligent Mechanical Innovation
                 </p>
                 <p style="color: var(--text-gray); margin-top: 1rem;">
-                    Our team combines decades of mechanical engineering expertise with cutting-edge AI knowledge 
-                    to deliver transformative solutions for modern industries.
+                    Our team unites decades of rigorous mechanical engineering discipline with cutting-edge artificial intelligence to architect transformative, scalable solutions for modern industrial ecosystems.
                 </p>
             </div>
 
            <div class="fade-in" style="margin-bottom: 3rem;">
                 <p>
-                    Founded in 2020, <strong>MechNerve Solutions</strong> emerged from a vision to bridge the gap between 
-                    traditional mechanical engineering and the transformative potential of artificial intelligence. 
-                    We recognized that the future of industrial innovation lies in the seamless integration of these two disciplines.
+                    Founded in 2020, <strong>MechNerve Solutions</strong> emerged from a singular vision: to bridge the critical gap between traditional hardware engineering and the explosive potential of AI. We recognized that the future of industrial infrastructure relies on the seamless, intelligent integration of physical systems and data-driven software.
                 </p>
                 
                 <p>
-                    Today, we stand at the forefront of Industry 4.0, delivering cutting-edge solutions that 
-                    transform how industries operate, optimize, and innovate. Our team of passionate engineers, 
-                    data scientists, and AI specialists work collaboratively to create intelligent systems that 
-                    learn, adapt, and optimize industrial processes in real-time.
+                    Today, we operate at the bleeding edge of Industry 4.0. Our elite cadre of mechanical designers, electrical engineers, and AI specialists collaborate to deploy autonomous systems, predictive maintenance algorithms, and optimized power networks that fundamentally redefine industrial efficiency.
                 </p>
             </div>
             
-            <!-- Mission & Vision -->
             <div class="features-grid fade-in">
                 <div class="feature-card hover-lift">
                     <h3>🎯 Our Mission</h3>
-                    <p>To design and implement smart, efficient, and sustainable mechanical systems enhanced by artificial intelligence, driving innovation in manufacturing and industrial operations worldwide.</p>
+                    <p>To engineer robust, precision-driven mechanical systems augmented by advanced AI, delivering unparalleled operational efficiency and sustainable innovation to the global manufacturing sector.</p>
                 </div>
                 
                 <div class="feature-card hover-lift">
                     <h3>🚀 Our Vision</h3>
-                    <p>To become a global leader in AI-powered mechanical solutions, transforming how industries operate and paving the way for the factories of the future through continuous innovation.</p>
+                    <p>To establish the global standard for AI-integrated mechanical infrastructure, accelerating the transition to fully autonomous, self-optimizing "factories of the future."</p>
                 </div>
             </div>
 
-            <!-- Team Stats -->
             <div class="team-stats fade-in">
                 <div class="stat-item">
                     <span class="stat-icon">👥</span>
                     <div class="stat-number">25+</div>
-                    <div class="stat-label">Expert Team Members</div>
+                    <div class="stat-label">Engineering Specialists</div>
                 </div>
                 <div class="stat-item">
                     <span class="stat-icon">🚀</span>
                     <div class="stat-number">50+</div>
-                    <div class="stat-label">Projects Completed</div>
+                    <div class="stat-label">Systems Deployed</div>
                 </div>
                 <div class="stat-item">
                     <span class="stat-icon">🏆</span>
@@ -108,85 +96,70 @@
                 <div class="stat-item">
                     <span class="stat-icon">⭐</span>
                     <div class="stat-number">98%</div>
-                    <div class="stat-label">Client Satisfaction</div>
+                    <div class="stat-label">System Reliability</div>
                 </div>
             </div>
 
-            <!-- Leadership Team -->
             <div class="team-section leadership-team fade-in">
                 <div class="team-header">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Leadership Team</h2>
-                    <p style="color: var(--text-gray);">Visionaries driving our strategic direction and innovation</p>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Executive Leadership</h2>
+                    <p style="color: var(--text-gray);">Visionaries driving our technological strategy and corporate growth</p>
                 </div>
                 
                 <div class="team-grid">
-                    <!-- Founder & MD -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
-                            <img src="{{ url_for('static', filename='images/team/founder.png') }}" alt="Founder & CEO">
+                            <img src="{{ url_for('static', filename='images/team/founder.png') }}" alt="Founder & MD">
                             <div class="member-badge">Founder & MD</div>
                             <div class="experience-badge">6+ Years Experience</div>
                         </div>
                         <div class="member-info">
-                            <h3 class="member-name">Dr. shaik Mansoor</h3>
+                            <h3 class="member-name">Dr. Shaik Mansoor</h3>
                             <div class="member-designation">Founder & Managing Director</div>
                             
                             <div class="member-details">
-                                <p>Visionary leader with 6+ years in mechanical engineering and industrial automation. Former Director of Innovation at a global manufacturing conglomerate.</p>
+                                <p>Visionary systems architect driving the convergence of mechanical design and intelligent automation. Specializes in autonomous EV technologies and enterprise-scale industrial innovation.</p>
                             </div>
                             
                             <div class="education-section">
                                 <div class="education-title">Education</div>
                                 <ul class="education-list">
                                     <li>Ph.D. in Mechanical Engineering - Stanford University</li>
-                                    <li>M.S. in Autonomous electric vehicle - Mahindra University</li>
-                                    <li>B.Tech in Mechanical Engineering - R.V.R & J.C. COLLEGE OF ENGINEERING</li>
+                                    <li>M.S. in Autonomous Electric Vehicles - Mahindra University</li>
+                                    <li>B.Tech in Mechanical Engineering - R.V.R & J.C. College of Engineering</li>
                                     <li>Executive Program in AI - Harvard Business School</li>
                                 </ul>
                             </div>
                             
                             <div class="specialization-section">
-                                <div class="specialization-title">Expertise</div>
+                                <div class="specialization-title">Core Competencies</div>
                                 <div class="specializations">
-                                    <span class="specialization-tag">Strategic Leadership</span>
-                                    <span class="specialization-tag">Industrial Automation</span>
-                                    <span class="specialization-tag">AI Integration</span>
-                                    <span class="specialization-tag">Business Development</span>
+                                    <span class="specialization-tag">Enterprise Strategy</span>
+                                    <span class="specialization-tag">Systems Architecture</span>
+                                    <span class="specialization-tag">EV Dynamics</span>
+                                    <span class="specialization-tag">AI Hardware Integration</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                                <a href="https://www.linkedin.com/in/mansoor-shaik-664b0b245" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:shaikmansoor3922@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                                <a href="https://www.linkedin.com/in/mansoor-shaik-664b0b245" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:shaikmansoor3922@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- CEO -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
                             <img src="{{ url_for('static', filename='images/team/ceo.png') }}" alt="Chief Technology Officer">
-                            <div class="member-badge">CEO</div>
+                            <div class="member-badge">CTO</div>
                             <div class="experience-badge">4+ Years Experience</div>
                         </div>
                         <div class="member-info">
                             <h3 class="member-name">Hemanth</h3>
-                            <div class="member-designation">Chief Executive Officer</div>
+                            <div class="member-designation">Chief Technology Officer</div>
                             
                             <div class="member-details">
-                                <p>Technology innovator with 4+ years in AI/ML research and implementation. Leads our R&D division and technology strategy.</p>
+                                <p>Strategic technology executive spearheading R&D in machine learning and industrial automation. Architect of MechNerve's proprietary neural network integration frameworks.</p>
                             </div>
                             
                             <div class="education-section">
@@ -195,53 +168,39 @@
                                     <li>Ph.D. in Artificial Intelligence - Carnegie Mellon University</li>
                                     <li>M.S. in Computer Science - University of California, Berkeley</li>
                                     <li>B.Tech in Computer Science - IIT Delhi</li>
-                                    <li>Certified Machine Learning Engineer - Google</li>
+                                    <li>Certified ML Engineer - Google</li>
                                 </ul>
                             </div>
                             
                             <div class="specialization-section">
-                                <div class="specialization-title">Expertise</div>
+                                <div class="specialization-title">Core Competencies</div>
                                 <div class="specializations">
-                                    <span class="specialization-tag">Machine Learning</span>
-                                    <span class="specialization-tag">Computer Vision</span>
                                     <span class="specialization-tag">Neural Networks</span>
+                                    <span class="specialization-tag">Predictive Modeling</span>
                                     <span class="specialization-tag">R&D Management</span>
+                                    <span class="specialization-tag">Computer Vision</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                                <a href="https://www.linkedin.com/in/hemanth-allanka-57748221a" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:hemanthallanka123@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                                <a href="https://www.linkedin.com/in/hemanth-allanka-57748221a" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:hemanthallanka123@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Mechanical Engineering Team -->
             <div class="team-section tech-team fade-in">
                 <div class="team-header">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Mechanical Engineering Team</h2>
-                    <p style="color: var(--text-gray);">Experts in design, analysis, and implementation</p>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Mechanical Design Division</h2>
+                    <p style="color: var(--text-gray);">Experts in structural analysis, thermodynamics, and physical integration</p>
                 </div>
                 
                 <div class="team-grid">
-                    <!-- Senior Mechanical Engineer 1 -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
-                            <img src="{{ url_for('static', filename='images/team/engineer1.png') }}" alt="Senior Mechanical Engineer">
+                            <img src="{{ url_for('static', filename='images/team/engineer1.png') }}" alt="Lead Engineer">
                             <div class="member-badge">Lead Engineer</div>
                             <div class="experience-badge">4+ Years Experience</div>
                         </div>
@@ -250,7 +209,7 @@
                             <div class="member-designation">Senior Mechanical Engineer</div>
                             
                             <div class="member-details">
-                                <p>Specialist in industrial equipment design and CAD/CAM systems. Has led 30+ successful mechanical design projects.</p>
+                                <p>Specialist in advanced CAD/CAM systems and finite element analysis (FEA). Drives the structural integrity and precision engineering of our automated industrial equipment.</p>
                             </div>
                             
                             <div class="education-section">
@@ -259,7 +218,6 @@
                                     <li>M.Tech in Mechanical Design - IIT Madras</li>
                                     <li>B.Tech in Mechanical Engineering - NIT Surathkal</li>
                                     <li>Certified SolidWorks Expert (CSWE)</li>
-                                    <li>Autodesk Certified Professional</li>
                                     <li>Six Sigma Green Belt Certified</li>
                                 </ul>
                             </div>
@@ -267,37 +225,23 @@
                             <div class="specialization-section">
                                 <div class="specialization-title">Technical Skills</div>
                                 <div class="specializations">
-                                    <span class="specialization-tag">CAD/CAM</span>
+                                    <span class="specialization-tag">Advanced CAD/CAM</span>
                                     <span class="specialization-tag">FEA Analysis</span>
-                                    <span class="specialization-tag">Thermal Systems</span>
-                                    <span class="specialization-tag">Hydraulics</span>
-                                    <span class="specialization-tag">Prototyping</span>
+                                    <span class="specialization-tag">Thermal Dynamics</span>
+                                    <span class="specialization-tag">Industrial Tooling</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                               <a href="https://www.linkedin.com/in/praneeth-soma" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:praneethsoma34@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                               <a href="https://www.linkedin.com/in/praneeth-soma" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:praneethsoma34@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Mechanical Engineer 2 -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
-                            <img src="{{ url_for('static', filename='images/team/engineer2.png') }}" alt="Mechanical Engineer">
+                            <img src="{{ url_for('static', filename='images/team/engineer2.png') }}" alt="Design Specialist">
                             <div class="member-badge">Design Specialist</div>
                             <div class="experience-badge">5+ Years Experience</div>
                         </div>
@@ -306,7 +250,7 @@
                             <div class="member-designation">Mechanical Design Engineer</div>
                             
                             <div class="member-details">
-                                <p>Expert in 3D modeling, simulation, and prototyping. Focuses on sustainable and efficient mechanical designs.</p>
+                                <p>Expert in rapid prototyping, computational fluid dynamics (CFD), and sustainable mechanical design tailored for high-stress manufacturing environments.</p>
                             </div>
                             
                             <div class="education-section">
@@ -315,7 +259,6 @@
                                     <li>M.S. in Mechanical Engineering - University of Michigan</li>
                                     <li>B.Tech in Mechanical Engineering - VIT Vellore</li>
                                     <li>ANSYS Certified Professional</li>
-                                    <li>Autodesk Fusion 360 Certified</li>
                                     <li>LEAN Manufacturing Certified</li>
                                 </ul>
                             </div>
@@ -324,46 +267,31 @@
                                 <div class="specialization-title">Technical Skills</div>
                                 <div class="specializations">
                                     <span class="specialization-tag">3D Modeling</span>
-                                    <span class="specialization-tag">Simulation</span>
-                                    <span class="specialization-tag">Prototyping</span>
+                                    <span class="specialization-tag">CFD Simulation</span>
+                                    <span class="specialization-tag">Rapid Prototyping</span>
                                     <span class="specialization-tag">DFM/DFA</span>
-                                    <span class="specialization-tag">Sustainability</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                               <a href="https://www.linkedin.com/in/komara-kedharnadh-goud-014a69258" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:kkedharnadh24@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                               <a href="https://www.linkedin.com/in/komara-kedharnadh-goud-014a69258" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:kkedharnadh24@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-  <!-- Electrical Engineering Team -->
             <div class="team-section ai-team fade-in">
                 <div class="team-header">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Electrical Engineering Team</h2>
-                    <p style="color: var(--text-gray);">Experts in power systems, control panels, and electrical design</p>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Electrical Systems Division</h2>
+                    <p style="color: var(--text-gray);">Architects of power distribution and high-voltage control panels</p>
                 </div>
                 
                 <div class="team-grid">
-                    <!-- Electrical Design Engineer -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
-                            <img src="{{ url_for('static', filename='images/team/electrical-design.png') }}" alt="Electrical Design Engineer">
+                            <img src="{{ url_for('static', filename='images/team/electrical-design.png') }}" alt="Electrical Lead">
                             <div class="member-badge">Electrical Lead</div>
                             <div class="experience-badge">5+ Years Experience</div>
                         </div>
@@ -372,17 +300,16 @@
                             <div class="member-designation">Senior Electrical Design Engineer</div>
                             
                             <div class="member-details">
-                                <p> Specialist in electrical system design, power distribution, and control panel engineering for industrial and commercial projects.</p>
+                                <p>Master architect of industrial power distribution and control panel engineering. Ensures seamless electrical integration for automated, high-voltage operational systems.</p>
                             </div>
                             
                             <div class="education-section">
                                 <div class="education-title">Education & Certifications</div>
                                 <ul class="education-list">
                                     <li>M.Tech in Power Systems – IIT Madras</li>
-                        <li>B.Tech in Electrical Engineering – JNTU Hyderabad</li>
-                        <li>Certified Electrical Safety Engineer</li>
-                        <li>AutoCAD Electrical Certified Professional</li>
-                        <li>IEC & IS Standards Compliance Training</li>
+                                    <li>B.Tech in Electrical Engineering – JNTU Hyderabad</li>
+                                    <li>AutoCAD Electrical Certified Professional</li>
+                                    <li>IEC & IS Standards Compliance Training</li>
                                 </ul>
                             </div>
                             
@@ -390,100 +317,69 @@
                                 <div class="specialization-title">Technical Skills</div>
                                 <div class="specializations">
                                    <span class="specialization-tag">Power Distribution</span>
-                        <span class="specialization-tag">Control Panel Design</span>
-                        <span class="specialization-tag">AutoCAD Electrical</span>
-                        <span class="specialization-tag">Load Calculation</span>
-                        <span class="specialization-tag">Earthing Systems</span>
+                                   <span class="specialization-tag">Control Panel Design</span>
+                                   <span class="specialization-tag">Load Calculations</span>
+                                   <span class="specialization-tag">Grid Integration</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                                <a href="https://www.linkedin.com/in/chenna-kalyani-9b3a10266" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:chennakalyani7@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                                <a href="https://www.linkedin.com/in/chenna-kalyani-9b3a10266" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:chennakalyani7@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Electrical Maintenance Engineer -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
-                            <img src="{{ url_for('static', filename='images/team/electrical-maintenance.png') }}" alt="Electric Engineer">
+                            <img src="{{ url_for('static', filename='images/team/electrical-maintenance.png') }}" alt="Maintenance Lead">
                             <div class="member-badge">Maintenance Lead</div>
                             <div class="experience-badge">4+ Years Experience</div>
                         </div>
                         <div class="member-info">
-                            <h3 class="member-name">durga</h3>
+                            <h3 class="member-name">Durga</h3>
                             <div class="member-designation">Electrical Maintenance Engineer</div>
                             
                             <div class="member-details">
-                                <p> Experienced in preventive maintenance, fault diagnosis, and commissioning of electrical systems in manufacturing plants.</p>
+                                <p>Specialist in preventive maintenance, VFD configuration, and fault diagnostics. Dedicated to ensuring zero-downtime operations across continuous manufacturing lines.</p>
                             </div>
                             
                             <div class="education-section">
                                 <div class="education-title">Education & Certifications</div>
                                 <ul class="education-list">
                                     <li>B.Tech in Electrical & Electronics Engineering – VIT</li>
-                        <li>Diploma in Industrial Electrical Maintenance</li>
-                        <li>HT & LT Panel Maintenance Certified</li>
-                        <li>VFD & Motor Control Training</li>
-                        <li>Electrical Safety & Lockout-Tagout (LOTO)</li>
+                                    <li>HT & LT Panel Maintenance Certified</li>
+                                    <li>VFD & Motor Control Training</li>
+                                    <li>Electrical Safety & LOTO Certified</li>
                                 </ul>
                             </div>
                             
                             <div class="specialization-section">
                                 <div class="specialization-title">Technical Skills</div>
                                 <div class="specializations">
-                                    <span class="specialization-tag">Electrical Maintenance</span>
-                        <span class="specialization-tag">HT & LT Panels</span>
-                        <span class="specialization-tag">Motor Drives</span>
-                        <span class="specialization-tag">Fault Analysis</span>
-                        <span class="specialization-tag">Preventive Maintenance</span>
+                                    <span class="specialization-tag">System Diagnostics</span>
+                                    <span class="specialization-tag">HT & LT Panels</span>
+                                    <span class="specialization-tag">Motor Drive Tuning</span>
+                                    <span class="specialization-tag">Preventative Lifecycle</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                                <a href="https://www.linkedin.com/in/jaya-durga-dhanikonda" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:djayadurga5@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                                <a href="https://www.linkedin.com/in/jaya-durga-dhanikonda" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:djayadurga5@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
                    
-
-            <!-- AI & Automation Team -->
             <div class="team-section ai-team fade-in">
                 <div class="team-header">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">AI & Automation Team</h2>
-                    <p style="color: var(--text-gray);">Specialists in intelligent systems and robotics</p>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">AI & Automation Division</h2>
+                    <p style="color: var(--text-gray);">Pioneers of embedded intelligence, robotics, and machine learning</p>
                 </div>
                 
                 <div class="team-grid">
-                    <!-- AI Specialist -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
                             <img src="{{ url_for('static', filename='images/team/ai-specialis.png') }}" alt="AI Specialist">
@@ -492,10 +388,10 @@
                         </div>
                         <div class="member-info">
                             <h3 class="member-name">Goutham</h3>
-                            <div class="member-designation">AI/ML Specialist</div>
+                            <div class="member-designation">Lead AI/ML Engineer</div>
                             
                             <div class="member-details">
-                                <p>Expert in implementing machine learning models for industrial applications, focusing on predictive maintenance and quality control.</p>
+                                <p>Lead data scientist architecting predictive maintenance models and computer vision pipelines for real-time industrial quality control and process optimization.</p>
                             </div>
                             
                             <div class="education-section">
@@ -504,42 +400,27 @@
                                     <li>M.S. in Data Science - University of Washington</li>
                                     <li>B.Tech in Computer Science - BITS Pilani</li>
                                     <li>Google Professional ML Engineer</li>
-                                    <li>AWS Certified Machine Learning Specialist</li>
-                                    <li>TensorFlow Developer Certificate</li>
+                                    <li>AWS Machine Learning Specialist</li>
                                 </ul>
                             </div>
                             
                             <div class="specialization-section">
                                 <div class="specialization-title">Technical Skills</div>
                                 <div class="specializations">
-                                    <span class="specialization-tag">Deep Learning</span>
+                                    <span class="specialization-tag">Deep Learning Pipelines</span>
                                     <span class="specialization-tag">Predictive Analytics</span>
-                                    <span class="specialization-tag">TensorFlow</span>
-                                    <span class="specialization-tag">PyTorch</span>
+                                    <span class="specialization-tag">TensorFlow/PyTorch</span>
                                     <span class="specialization-tag">Computer Vision</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                                <a href="https://www.linkedin.com/in/oleti-maha-goutham-08b386245" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:oletimahagoutham@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                                <a href="https://www.linkedin.com/in/oleti-maha-goutham-08b386245" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:oletimahagoutham@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Robotics Engineer -->
                     <div class="team-member hover-lift">
                         <div class="member-image">
                             <img src="{{ url_for('static', filename='images/team/robotics-engineer.png') }}" alt="Robotics Engineer">
@@ -551,7 +432,7 @@
                             <div class="member-designation">Robotics & Automation Engineer</div>
                             
                             <div class="member-details">
-                                <p>Specialist in industrial robotics, PLC programming, and automated systems integration. Has deployed 50+ robotic systems.</p>
+                                <p>Expert in PLC programming, robotic kinematics, and IoT integration. Bridges the critical gap between software commands and precise physical robotic execution.</p>
                             </div>
                             
                             <div class="education-section">
@@ -560,246 +441,166 @@
                                     <li>M.S. in Robotics - ETH Zurich</li>
                                     <li>B.Tech in Electronics Engineering - NIT Trichy</li>
                                     <li>Certified Robotics Engineer (CRE)</li>
-                                    <li>SIEMENS PLC Certified</li>
-                                    <li>FANUC Robot Programming Certified</li>
+                                    <li>SIEMENS PLC & FANUC Certified</li>
                                 </ul>
                             </div>
                             
                             <div class="specialization-section">
                                 <div class="specialization-title">Technical Skills</div>
                                 <div class="specializations">
-                                    <span class="specialization-tag">Industrial Robotics</span>
-                                    <span class="specialization-tag">PLC Programming</span>
-                                    <span class="specialization-tag">Automation</span>
-                                    <span class="specialization-tag">IoT Systems</span>
-                                    <span class="specialization-tag">Motion Control</span>
+                                    <span class="specialization-tag">Robotic Kinematics</span>
+                                    <span class="specialization-tag">PLC Architecture</span>
+                                    <span class="specialization-tag">Industrial IoT</span>
+                                    <span class="specialization-tag">Motion Control Systems</span>
                                 </div>
                             </div>
                             
                             <div class="member-social">
-                                <a href="https://www.linkedin.com/in/dubbaka-manoj-goud-544993344" 
-                                    class="social-icon" 
-                                    title="LinkedIn Profile"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>   
-                                <a href="mailto:manumanu02831@gmail.com" 
-                                    class="social-icon" 
-                                    title="Email"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                                <a href="https://www.linkedin.com/in/dubbaka-manoj-goud-544993344" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>   
+                                <a href="mailto:manumanu02831@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Core Values -->
             <div class="fade-in" style="margin: 4rem 0;">
                 <div class="team-header">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Our Core Values</h2>
-                    <p style="color: var(--text-gray); max-width: 800px; margin: 0 auto;">Principles that guide every solution we deliver</p>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;" class="text-gradient">Our Operating Principles</h2>
+                    <p style="color: var(--text-gray); max-width: 800px; margin: 0 auto;">The foundational values driving our engineering standards</p>
                 </div>
                 
                 <div class="features-grid" style="margin-top: 2rem;">
                     <div class="feature-card hover-lift">
-                        <h3 style="display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 1.5rem;">💡</span> Innovation
-                        </h3>
-                        <p>We constantly push boundaries, exploring new technologies and methodologies to stay ahead of industry trends and deliver breakthrough solutions.</p>
+                        <h3 style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.5rem;">💡</span> Disruptive Innovation</h3>
+                        <p>We reject the status quo. We actively seek out emergent technologies and integrate them into legacy systems to generate unprecedented operational advantages.</p>
                     </div>
                     
                     <div class="feature-card hover-lift">
-                        <h3 style="display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 1.5rem;">⚡</span> Precision
-                        </h3>
-                        <p>Every solution we deliver is built with meticulous attention to detail and engineering excellence, ensuring optimal performance and reliability.</p>
+                        <h3 style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.5rem;">⚡</span> Absolute Precision</h3>
+                        <p>Industrial scale leaves no room for error. Every solution is rigorously simulated, tested, and validated to ensure flawless execution and system reliability.</p>
                     </div>
                     
                     <div class="feature-card hover-lift">
-                        <h3 style="display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 1.5rem;">🌱</span> Sustainability
-                        </h3>
-                        <p>We design solutions that not only perform exceptionally but also contribute to a sustainable future through energy efficiency and resource optimization.</p>
+                        <h3 style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.5rem;">🌱</span> Engineered Sustainability</h3>
+                        <p>We design for the long term. Our power allocation logic and mechanical systems are optimized to radically reduce energy consumption and resource waste.</p>
                     </div>
                     
                     <div class="feature-card hover-lift">
-                        <h3 style="display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 1.5rem;">🤝</span> Collaboration
-                        </h3>
-                        <p>We believe in working closely with our clients, understanding their unique challenges, and creating tailored solutions that drive their success.</p>
+                        <h3 style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.5rem;">🤝</span> Strategic Partnership</h3>
+                        <p>We do not act as mere vendors. We embed ourselves in your operational challenges, acting as an extension of your own R&D and engineering departments.</p>
                     </div>
                 </div>
             </div>
             
-           <!-- Add this button in your About page where you want the "Explore Careers" button -->
-<section class="fade-in" style="padding: 4rem 5%;">
-    <div style="text-align: center;">
-        <h2 style="font-size: 2.5rem; margin-bottom: 2rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-            Join Our Team
-        </h2>
-        <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-gray); font-size: 1.1rem;">
-            We're always looking for talented individuals to join our innovative team. 
-            If you're passionate about engineering and AI, we'd love to hear from you.
-        </p>
-        <button onclick="openCareerForm()" class="btn" style="padding: 1.2rem 3rem; font-size: 1.1rem;">
-            Explore Careers →
-        </button>
-    </div>
-</section>
+            <section class="fade-in" style="padding: 4rem 5%;">
+                <div style="text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" class="text-gradient">Join the Innovators</h2>
+                    <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-gray); font-size: 1.1rem;">
+                        We are actively recruiting elite engineers and data scientists. If you are driven to architect the future of industrial technology, your place is here.
+                    </p>
+                    <button onclick="openCareerForm()" class="btn" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Explore Open Roles →</button>
+                </div>
+            </section>
 
-<!-- Career Application Modal -->
-<div id="careerModal" class="career-modal" onclick="closeCareerForm()">
-   <div class="career-modal-content" onclick="event.stopPropagation()" style="max-height: 90vh; overflow-y: auto; background: var(--dark-bg);">
-        <div class="career-modal-header" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.9), rgba(244, 114, 182, 0.9));">
-            <h2 style="color: white; margin: 0;">Career Application</h2>
-            <button onclick="closeCareerForm()" class="career-close">&times;</button>
-        </div>
-        
-        <div class="career-modal-body">
-           <form id="careerForm"
-       class="career-form"
-       method="POST"
-       action="/api/career"
-       enctype="multipart/form-data"
-               style="background: rgba(30, 41, 59, 0.3); padding: 2rem; border-radius: 10px;">
-
-                <!-- Personal Information -->
-                <div class="form-section" style="margin-bottom: 2.5rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem; border-radius: 8px;">👤</span>
-                        Personal Information
-                    </h3>
-                    
-                    <div class="career-form-row">
-                        <div class="career-form-group">
-                            <label for="careerName" style="color: var(--text-light);">
-                                Full Name <span class="career-required">*</span>
-                            </label>
-                            <input type="text" id="careerName" name="name" required 
-                                   placeholder="Enter your full name"
-                                   style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
-                        </div>
-                        
-                        <div class="career-form-group">
-                            <label for="careerEmail" style="color: var(--text-light);">
-                                Email Address <span class="career-required">*</span>
-                            </label>
-                            <input type="email" id="careerEmail" name="email" required 
-                                   placeholder="your.email@example.com"
-                                   style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
-                        </div>
+            <div id="careerModal" class="career-modal" onclick="closeCareerForm()">
+                <div class="career-modal-content" onclick="event.stopPropagation()" style="max-height: 90vh; overflow-y: auto; background: var(--dark-bg);">
+                    <div class="career-modal-header" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.9), rgba(244, 114, 182, 0.9));">
+                        <h2 style="color: white; margin: 0;">Career Application</h2>
+                        <button onclick="closeCareerForm()" class="career-close">&times;</button>
                     </div>
                     
-                    <div class="career-form-row">
-                        <div class="career-form-group">
-                            <label for="careerPhone" style="color: var(--text-light);">
-                                Phone Number <span class="career-required">*</span>
-                            </label>
-                            <input type="tel" id="careerPhone" name="phone" required 
-                                   placeholder="+91 98765 43210"
-                                   style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
-                        </div>
-                        
-                        <div class="career-form-group">
-                            <label for="careerRole" style="color: var(--text-light);">
-                                Applying For <span class="career-required">*</span>
-                            </label>
-                            <select id="careerRole"  name="role"required
-                                    style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
-                                <option value="" disabled selected>Select Position</option>
-                                <option value="Mechanical Engineer">Mechanical Engineer</option>
-                                <option value="AI/ML Engineer">AI/ML Engineer</option>
-                                <option value="Software Developer">Software Developer</option>
-                                <option value="Data Scientist">Data Scientist</option>
-                                <option value="Research Intern">Research Intern</option>
-                                <option value="Project Manager">Project Manager</option>
-                            </select>
-                        </div>
+                    <div class="career-modal-body">
+                        <form id="careerForm" class="career-form" method="POST" action="/api/career" enctype="multipart/form-data" style="background: rgba(30, 41, 59, 0.3); padding: 2rem; border-radius: 10px;">
+                            <div class="form-section" style="margin-bottom: 2.5rem;">
+                                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem; border-radius: 8px;">👤</span> Personal Information
+                                </h3>
+                                
+                                <div class="career-form-row">
+                                    <div class="career-form-group">
+                                        <label for="careerName" style="color: var(--text-light);">Full Name <span class="career-required">*</span></label>
+                                        <input type="text" id="careerName" name="name" required placeholder="Enter your full name" style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
+                                    </div>
+                                    <div class="career-form-group">
+                                        <label for="careerEmail" style="color: var(--text-light);">Email Address <span class="career-required">*</span></label>
+                                        <input type="email" id="careerEmail" name="email" required placeholder="your.email@example.com" style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
+                                    </div>
+                                </div>
+                                
+                                <div class="career-form-row">
+                                    <div class="career-form-group">
+                                        <label for="careerPhone" style="color: var(--text-light);">Phone Number <span class="career-required">*</span></label>
+                                        <input type="tel" id="careerPhone" name="phone" required placeholder="+91 98765 43210" style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
+                                    </div>
+                                    <div class="career-form-group">
+                                        <label for="careerRole" style="color: var(--text-light);">Applying For <span class="career-required">*</span></label>
+                                        <select id="careerRole" name="role" required style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light);">
+                                            <option value="" disabled selected>Select Position</option>
+                                            <option value="Mechanical Engineer">Mechanical Engineer</option>
+                                            <option value="AI/ML Engineer">AI/ML Engineer</option>
+                                            <option value="Software Developer">Software Developer</option>
+                                            <option value="Data Scientist">Data Scientist</option>
+                                            <option value="Research Intern">Research Intern</option>
+                                            <option value="Project Manager">Project Manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section" style="margin-bottom: 2.5rem;">
+                                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem; border-radius: 8px;">📄</span> Resume/CV
+                                </h3>
+                                <div class="career-file-upload" style="border-color: rgba(56, 189, 248, 0.3);">
+                                    <input type="file" id="careerResume" name="resume" accept=".pdf,.doc,.docx" class="career-file-input" required>
+                                    <div class="career-file-icon" style="color: var(--primary);">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                            <polyline points="14 2 14 8 20 8"/>
+                                            <line x1="16" y1="13" x2="8" y2="13"/>
+                                            <line x1="16" y1="17" x2="8" y2="17"/>
+                                            <polyline points="10 9 9 9 8 9"/>
+                                        </svg>
+                                    </div>
+                                    <div class="career-file-text" style="color: var(--text-light);">Upload your Resume/CV</div>
+                                    <div class="career-file-subtext" style="color: var(--text-gray);">PDF, DOC, DOCX (Max 5MB)</div>
+                                </div>
+                            </div>
+
+                            <div class="form-section" style="margin-bottom: 2.5rem;">
+                                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem; border-radius: 8px;">✍️</span> Additional Information
+                                </h3>
+                                <div class="career-form-group">
+                                    <label for="careerMessage" style="color: var(--text-light);">Cover Letter / Engineering Philosophy <span class="career-required">*</span></label>
+                                    <textarea id="careerMessage" name="message" rows="4" required placeholder="Tell us about your technical approach and why you want to build at MechNerve..." style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light); resize: vertical;"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-section" style="margin-bottom: 2rem;">
+                                <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: rgba(56, 189, 248, 0.05); border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.1);">
+                                    <input type="checkbox" id="careerConsent" required style="margin-top: 3px;">
+                                    <label for="careerConsent" style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.4;">
+                                        I agree to the processing of my personal data for recruitment purposes. I confirm that the technical background provided is accurate.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="career-form-buttons">
+                                <button type="button" onclick="closeCareerForm()" style="flex: 0.3; background: transparent; border: 1px solid rgba(244, 114, 182, 0.3); color: var(--text-light); padding: 1rem; border-radius: 6px; font-size: 1rem; cursor: pointer; transition: var(--transition-fast);">Cancel</button>
+                                <button type="submit" style="flex: 1; background: var(--gradient-primary); color: white; border: none; padding: 1rem 2rem; border-radius: 6px; font-size: 1rem; font-weight: 500; cursor: pointer; transition: var(--transition-fast); box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);">Submit Application</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div>
 
-                <!-- Resume Upload -->
-                <div class="form-section" style="margin-bottom: 2.5rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem; border-radius: 8px;">📄</span>
-                        Resume/CV
-                    </h3>
-                    
-                    <div class="career-file-upload" style="border-color: rgba(56, 189, 248, 0.3);">
-                        <input type="file" id="careerResume" name="resume"accept=".pdf,.doc,.docx" 
-                               class="career-file-input" required>
-                        <div class="career-file-icon" style="color: var(--primary);">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                <polyline points="14 2 14 8 20 8"/>
-                                <line x1="16" y1="13" x2="8" y2="13"/>
-                                <line x1="16" y1="17" x2="8" y2="17"/>
-                                <polyline points="10 9 9 9 8 9"/>
-                            </svg>
-                        </div>
-                        <div class="career-file-text" style="color: var(--text-light);">
-                            Upload your Resume/CV
-                        </div>
-                        <div class="career-file-subtext" style="color: var(--text-gray);">
-                            PDF, DOC, DOCX (Max 5MB)
-                        </div>
-                    </div>
-                </div>
+        </div> </section>
 
-                <!-- Cover Letter -->
-                <div class="form-section" style="margin-bottom: 2.5rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem; border-radius: 8px;">✍️</span>
-                        Additional Information
-                    </h3>
-                    
-                    <div class="career-form-group">
-                        <label for="careerMessage" style="color: var(--text-light);">
-                            Cover Letter / Why you're interested <span class="career-required">*</span>
-                        </label>
-                        <textarea id="careerMessage" name="message" rows="4" required 
-                                  placeholder="Tell us why you're interested in joining MechNerve Solutions..."
-                                  style="background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--text-light); resize: vertical;"></textarea>
-                    </div>
-                </div>
-
-                <!-- Consent -->
-                <div class="form-section" style="margin-bottom: 2rem;">
-                    <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: rgba(56, 189, 248, 0.05); border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.1);">
-                        <input type="checkbox" id="careerConsent" required 
-                               style="margin-top: 3px;">
-                        <label for="careerConsent" style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.4;">
-                            I agree to the processing of my personal data for recruitment purposes as described in the 
-                            <a href="#" style="color: var(--primary); text-decoration: none;">Privacy Policy</a>. 
-                            I confirm that the information provided is accurate.
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Submit Button -->
-                <div class="career-form-buttons">
-                    <button type="button" onclick="closeCareerForm()" 
-                            style="flex: 0.3; background: transparent; border: 1px solid rgba(244, 114, 182, 0.3); color: var(--text-light); padding: 1rem; border-radius: 6px; font-size: 1rem; cursor: pointer; transition: var(--transition-fast);">
-                        Cancel
-                    </button>
-                    <button type="submit" 
-                            style="flex: 1; background: var(--gradient-primary); color: white; border: none; padding: 1rem 2rem; border-radius: 6px; font-size: 1rem; font-weight: 500; cursor: pointer; transition: var(--transition-fast); box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);">
-                        Submit Application
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-    <!-- Footer -->
     <footer>
         <div style="max-width: 1200px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; text-align: left;">
                 <div>
                     <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
                         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="height: 30px;">
@@ -815,7 +616,7 @@
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                         <a href="/" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Home</a>
                         <a href="/about" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">About Us</a>
-                        <a href="#services" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Services</a>
+                        <a href="/portfolio" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Services & Projects</a>
                         <a href="/contact" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Contact</a>
                     </div>
                 </div>
@@ -830,43 +631,19 @@
                 </div>
             </div>
             
-            <div style="border-top: 1px solid rgba(56, 189, 248, 0.1); padding-top: 1.5rem;">
+            <div style="border-top: 1px solid rgba(56, 189, 248, 0.1); padding-top: 1.5rem; text-align: center;">
                 <p style="color: var(--text-gray); font-size: 0.85rem;">
                     © 2026 MechNerve Solutions. All rights reserved.
                 </p>
             </div>
         </div>
     </footer>
-            <style>
-/* FIX 2: allow scrolling inside career modal */
-.career-modal-content {
-    max-height: 90vh;
-    overflow-y: auto;
-}
-</style>
-            <style>
-/* 🔒 HARD FIX: prevent file input overlay */
-.career-file-upload {
-    position: relative;
-}
-
-.career-file-input {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 1;
-}
-                .career-file-upload {
-    pointer-events: auto;
-}
-.career-modal-header,
-.career-modal-body,
-.career-form-group,
-.career-form-buttons {
-    position: relative;
-    z-index: 2;
-}
-</style>
+    
+    <style>
+        .career-modal-content { max-height: 90vh; overflow-y: auto; }
+        .career-file-upload { position: relative; pointer-events: auto; }
+        .career-file-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; z-index: 1; }
+        .career-modal-header, .career-modal-body, .career-form-group, .career-form-buttons { position: relative; z-index: 2; }
+    </style>
 </body>
 </html>
