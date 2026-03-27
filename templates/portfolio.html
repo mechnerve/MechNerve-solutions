@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services & Portfolio | MechNerve Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the services and featured engineering projects by MechNerve Solutions.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/png">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-content">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Logo" class="loading-logo">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <header>
+        <div class="navbar">
+            <div class="logo-area">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="MechNerve Logo">
+                <span>MechNerve</span>
+            </div>
+            
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/portfolio">Services & Projects</a>
+                <a href="/contact">Contact</a>
+                <a href="/contact#contact-form" class="btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Get Started</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <section class="page">
+        <img class="page-bg-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Background Logo">
+        
+        <div class="page-content-wrapper">
+            
+            <div class="fade-in" style="text-align: center; margin-bottom: 4rem;">
+                <h1>Our <span class="text-gradient">Expertise & Portfolio</span></h1>
+                <p style="font-size: 1.2rem; color: var(--text-gray); max-width: 800px; margin: 1rem auto 0;">
+                    Discover how we bridge the gap between traditional mechanical engineering and intelligent AI systems through our comprehensive services and proven project track record.
+                </p>
+            </div>
+
+            <div id="services" style="margin-bottom: 6rem;">
+                <div class="team-header fade-in">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;" class="text-gradient">What We Provide</h2>
+                    <p style="color: var(--text-gray); max-width: 800px; margin: 0 auto;">
+                        Comprehensive engineering solutions bridging the gap between hardware, software, and mechanical design.
+                    </p>
+                </div>
+                
+                <div class="features-grid fade-in" style="margin-top: 3rem;">
+                    <div class="feature-card hover-lift">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">🔌</span> Embedded Systems & IoT
+                        </h3>
+                        <p>Custom firmware development and hardware integration using platforms like Raspberry Pi Pico W. We specialize in robust communication protocols including CAN bus systems for industrial and automotive applications.</p>
+                    </div>
+                    
+                    <div class="feature-card hover-lift">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">⚡</span> EV Technology & Power Electronics
+                        </h3>
+                        <p>Advanced power management solutions including DC-DC boost converters, regenerative braking system simulations, and dynamic power allocation for modern Electric Vehicles.</p>
+                    </div>
+                    
+                    <div class="feature-card hover-lift">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">⚙️</span> Mechanical Design & Simulation
+                        </h3>
+                        <p>End-to-end mechanical engineering services. From 3D CAD modeling to comprehensive MATLAB Simulink and LabVIEW simulations to ensure system reliability before physical prototyping.</p>
+                    </div>
+                    
+                    <div class="feature-card hover-lift">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">🧠</span> AI & Machine Learning Integration
+                        </h3>
+                        <p>Developing intelligent algorithms using Python to optimize industrial processes, automate testing sequences, and bring predictive capabilities to traditional mechanical systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: 0; height: 1px; background: rgba(56, 189, 248, 0.2); margin: 4rem 0;" class="fade-in">
+
+            <div id="projects" style="margin-bottom: 4rem;">
+                <div class="team-header fade-in">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;" class="text-gradient">What We Did</h2>
+                    <p style="color: var(--text-gray); max-width: 800px; margin: 0 auto;">
+                        A showcase of our engineered solutions, from autonomous systems to advanced power allocation.
+                    </p>
+                </div>
+                
+                <div class="team-grid fade-in" style="margin-top: 3rem;">
+                    <div class="team-member hover-lift" style="padding: 2rem; text-align: left;">
+                        <div style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; color: var(--primary); font-size: 0.85rem; margin-bottom: 1rem;">Automotive / Embedded</div>
+                        <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">CAN Communicated Autonomous Door System</h3>
+                        <p style="color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                            Designed and developed an autonomous door opening and closing mechanism relying on Controller Area Network (CAN) bus communication for seamless, low-latency sensor integration and motor control.
+                        </p>
+                    </div>
+
+                    <div class="team-member hover-lift" style="padding: 2rem; text-align: left;">
+                        <div style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; color: var(--primary); font-size: 0.85rem; margin-bottom: 1rem;">Power Electronics / EV</div>
+                        <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">Fuel Cell & VRFB Dynamic Power Allocation</h3>
+                        <p style="color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                            Engineered a dynamic power allocation system integrating Fuel Cells and Vanadium Redox Flow Batteries (VRFB), optimizing energy distribution for sustained and efficient output.
+                        </p>
+                    </div>
+
+                    <div class="team-member hover-lift" style="padding: 2rem; text-align: left;">
+                        <div style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; color: var(--primary); font-size: 0.85rem; margin-bottom: 1rem;">Simulation / Control Systems</div>
+                        <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">Regenerative Braking Boost Converter</h3>
+                        <p style="color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                            Developed comprehensive MATLAB Simulink models and control code for a boost converter designed to capture and manage regenerative braking energy in DC machines.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member hover-lift" style="padding: 2rem; text-align: left;">
+                        <div style="background: rgba(56, 189, 248, 0.1); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; color: var(--primary); font-size: 0.85rem; margin-bottom: 1rem;">Automation / LabVIEW</div>
+                        <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">Automated Alarm Sequence Controller</h3>
+                        <p style="color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                            Programmed a highly reliable, step-by-step alarm sequencing system using LabVIEW, ensuring precise timing and automated fault detection for industrial environments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div> </section>
+
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="height: 30px;">
+                        <span style="font-size: 1.3rem; font-weight: bold;" class="text-gradient">MechNerve</span>
+                    </div>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">
+                        Pioneering intelligent mechanical solutions through AI integration and innovation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="/" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Home</a>
+                        <a href="/about" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">About Us</a>
+                        <a href="/portfolio#services" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Services</a>
+                        <a href="/contact" style="color: var(--text-gray); text-decoration: none; transition: var(--transition-fast);">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Contact Info</h4>
+                    <div style="color: var(--text-gray); font-size: 0.9rem;">
+                        <p>Hyderabad, India</p>
+                        <p>mechnervesolutions@gmail.com</p>
+                        <p>+91 7995961231</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(56, 189, 248, 0.1); padding-top: 1.5rem;">
+                <p style="color: var(--text-gray); font-size: 0.85rem;">
+                    © 2026 MechNerve Solutions. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
